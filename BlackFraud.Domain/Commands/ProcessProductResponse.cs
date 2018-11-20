@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace BlackFraud.Domain.Commands
 {
-    public class ProcessProductResponse : IHandler<ProcessProductRequest, ProcessProductResponse>
+    public class ProcessProductResponse
     {
-        public ProcessProductResponse Handle(ProcessProductRequest rq)
-        {
-            throw new NotImplementedException();
-        }
+        public string Status { get; set; }
     }
 }

@@ -89,11 +89,31 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection">
       <Version>2.1.1</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging">
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration">
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console">
+      <Version>2.1.1</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions">
       <Version>2.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BlackFraud.Application.WebSelenium\BlackFraud.Application.WebSelenium.csproj">
+      <Project>{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}</Project>
+      <Name>BlackFraud.Application.WebSelenium</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlackFraud.Application\BlackFraud.Application.csproj">
+      <Project>{8540D26C-7F53-40A4-905A-A9EEE75745ED}</Project>
+      <Name>BlackFraud.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BlackFraud.Domain\BlackFraud.Domain.csproj">
       <Project>{93E71653-D727-4889-8A05-8BBD76ED2BB2}</Project>
       <Name>BlackFraud.Domain</Name>

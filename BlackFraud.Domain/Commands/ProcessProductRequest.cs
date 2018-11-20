@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlackFraud.Domain.Infrastrucuture;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace BlackFraud.Domain.Commands
     {
         public string Vendor { get; set; }
 
-        public string Browser { get; set; }
+        public Browsers Browser { get; set; }
 
         public Uri Url { get; set; }
 

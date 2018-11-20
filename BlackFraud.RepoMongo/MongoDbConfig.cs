@@ -1,33 +1,20 @@
 ﻿using BlackFraud.Domain;
-using Microsoft.Extensions.Configuration;
+using BlackFraud.RepoMongo.Infrastrucutre;
+using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BlackFraud.RepoMongo
 {
-    public class MongoDbConfig : DbBase
+    public class MongoDbConfig
     {
-        private readonly string _connectionString;
-
         public IMongoDatabase Database { get; }
 
         public MongoClient Client { get; }
 
-        public MongoDbConfig(IConfiguration configuration)
-            : this("blackFraud", configuration)
+        public MongoDbConfig(IOptions<MongoDbConfigOptions> options)
         {
-
-        }
-
-        public MongoDbConfig(string name, IConfiguration configuration) : base(name)
-        {
-            var section = configuration.GetSection($"Mongo{name}");
-            var conn = section["Connection"];
-            var db = section["Database"];
+            var conn = options.Value.ConnectionString;
+            var db = options.Value.DatabaseName;
 
             Client = new MongoClient(conn);
             Database = Client.GetDatabase(db);

@@ -5,15 +5,17 @@ VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackFraud.Batch", "BlackFraud.Batch\BlackFraud.Batch.csproj", "{EE42B56D-5BB6-41FD-A737-48CD0D79134F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackFraud.RepoMongo", "BlackFraud.RepoMongo\BlackFraud.RepoMongo.csproj", "{9044EB5A-A707-40BC-8607-E57F3F21E774}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackFraud.RepoMongo", "BlackFraud.RepoMongo\BlackFraud.RepoMongo.csproj", "{9044EB5A-A707-40BC-8607-E57F3F21E774}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackFraud.Domain", "BlackFraud.Domain\BlackFraud.Domain.csproj", "{93E71653-D727-4889-8A05-8BBD76ED2BB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackFraud.Domain", "BlackFraud.Domain\BlackFraud.Domain.csproj", "{93E71653-D727-4889-8A05-8BBD76ED2BB2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deps", "deps", "{25BA8680-C1E8-4D87-A999-227F85702592}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackFraud", "BlackFraud\BlackFraud.csproj", "{06C5EF3E-1746-444C-97D0-277FA1A057B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackFraud", "BlackFraud\BlackFraud.csproj", "{06C5EF3E-1746-444C-97D0-277FA1A057B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackFraud.Application", "BlackFraud.Application\BlackFraud.Application.csproj", "{8540D26C-7F53-40A4-905A-A9EEE75745ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackFraud.Application", "BlackFraud.Application\BlackFraud.Application.csproj", "{8540D26C-7F53-40A4-905A-A9EEE75745ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackFraud.Application.WebSelenium", "BlackFraud.Application.WebSelenium\BlackFraud.Application.WebSelenium.csproj", "{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{8540D26C-7F53-40A4-905A-A9EEE75745ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8540D26C-7F53-40A4-905A-A9EEE75745ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8540D26C-7F53-40A4-905A-A9EEE75745ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
