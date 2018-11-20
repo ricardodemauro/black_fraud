@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackFraud", "BlackFraud\Bl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackFraud.Application", "BlackFraud.Application\BlackFraud.Application.csproj", "{8540D26C-7F53-40A4-905A-A9EEE75745ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackFraud.Application.WebSelenium", "BlackFraud.Application.WebSelenium\BlackFraud.Application.WebSelenium.csproj", "{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackFraud.Application.WebSelenium", "BlackFraud.Application.WebSelenium\BlackFraud.Application.WebSelenium.csproj", "{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackFraud.Repository.MariaDb", "BlackFraud.Repository.MariaDb\BlackFraud.Repository.MariaDb.csproj", "{6580974C-C037-488A-8F7A-17FEE6C29E80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A9A37E3-72A0-44CE-B1E5-7C33B77651C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6580974C-C037-488A-8F7A-17FEE6C29E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6580974C-C037-488A-8F7A-17FEE6C29E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6580974C-C037-488A-8F7A-17FEE6C29E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6580974C-C037-488A-8F7A-17FEE6C29E80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

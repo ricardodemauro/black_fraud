@@ -63,6 +63,9 @@
       <DependentUpon>appsettings.json</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="secrets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration">
@@ -121,6 +124,10 @@
     <ProjectReference Include="..\BlackFraud.RepoMongo\BlackFraud.RepoMongo.csproj">
       <Project>{9044EB5A-A707-40BC-8607-E57F3F21E774}</Project>
       <Name>BlackFraud.RepoMongo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlackFraud.Repository.MariaDb\BlackFraud.Repository.MariaDb.csproj">
+      <Project>{6580974C-C037-488A-8F7A-17FEE6C29E80}</Project>
+      <Name>BlackFraud.Repository.MariaDb</Name>
     </ProjectReference>
     <ProjectReference Include="..\BlackFraud\BlackFraud.csproj">
       <Project>{06C5EF3E-1746-444C-97D0-277FA1A057B6}</Project>

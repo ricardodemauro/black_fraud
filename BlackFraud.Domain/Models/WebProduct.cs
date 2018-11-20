@@ -16,9 +16,5 @@ namespace BlackFraud.Domain.Models
         public SearchBy PriceSearchBy { get; set; }
 
         public string PriceXPath { get; set; }
-
-        public string Price { get; set; }
-
-        public Uri Url { get; set; }
     }
 }

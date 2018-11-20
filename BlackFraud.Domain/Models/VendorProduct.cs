@@ -8,10 +8,6 @@ namespace BlackFraud.Domain.Models
 {
     public class VendorProduct : Product
     {
-        public string Url { get; set; }
-
-        public string VendorCode { get; set; }
-
         public decimal Price { get; set; }
 
         public DateTime Modified { get; set; }

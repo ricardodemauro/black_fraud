@@ -9,6 +9,6 @@ namespace BlackFraud.Domain.Infrastrucuture
 {
     public abstract class ModelBase
     {
-        public ObjectId Id { get; set; }
+        public string Id { get; set; }
     }
 }

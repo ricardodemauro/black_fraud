@@ -12,5 +12,9 @@ namespace BlackFraud.Domain.Models
         public string DisplayName { get; set; }
 
         public string Code { get; set; }
+
+        public Uri Url { get; set; }
+
+        public string VendorCode { get; set; }
     }
 }

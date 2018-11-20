@@ -7,6 +7,8 @@ using BlackFraud.Domain.Commands;
 using BlackFraud.RepoMongo;
 using BlackFraud.RepoMongo.Infrastrucutre;
 using BlackFraud.RepoMongo.Persisters;
+using BlackFraud.Repository.MariaDb.Insfrastructure;
+using BlackFraud.Repository.MariaDb.Persisters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -37,7 +39,7 @@ namespace BlackFraud.Batch.Infrastrucutre
             #endregion Db
 
             #region Persisters and Lookups
-            services.AddScoped<IVendorProductPersister, MongoVendorProductPersister>();
+            services.AddScoped<IVendorProductPersister, MariaVendorProductPersister>();
             services.AddScoped<IWebVendorProductLookup, SeleniumWebVendorProductLookup>();
             #endregion Persisters and Lookups
 
@@ -51,12 +53,20 @@ namespace BlackFraud.Batch.Infrastrucutre
                 opts.ChromePath = configuration["Selenium:ChromePath"];
                 opts.FirefoxPath = configuration["Selenium:FirefoxPath"];
                 opts.Timeout = configuration.GetValue<int>("Selenium:Timeout");
+                opts.Browser = (Domain.Infrastrucuture.Browsers)Enum.Parse(typeof(Domain.Infrastrucuture.Browsers), configuration["Selenium:Browser"]);
+                opts.EnableImages = configuration.GetValue<bool>("Selenium:EnableImages");
+                opts.Headless = configuration.GetValue<bool>("Selenium:Headless");
             });
 
             services.Configure<MongoDbConfigOptions>(opts =>
             {
-                opts.ConnectionString = configuration["MongoBlackFraud:Connection"];
+                opts.ConnectionString = configuration["MongoBlackFraud:ConnectionString"];
                 opts.DatabaseName = configuration["MongoBlackFraud:Database"];
+            });
+
+            services.Configure<MariaDbConfigOptions>(opts =>
+            {
+                opts.ConnectionString = configuration["MariaBlackFraud:ConnectionString"];
             });
             #endregion Options
         }

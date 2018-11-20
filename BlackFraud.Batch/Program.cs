@@ -31,6 +31,7 @@ namespace BlackFraud.Batch
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile($"appsettings.json", optional: false, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{ENV_NAME}.json", optional: true, reloadOnChange: true)
+                .AddJsonFile("secrets.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables("APP")
                 .AddXmlFile("app.config", optional: true);
 
